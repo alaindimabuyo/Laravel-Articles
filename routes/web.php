@@ -12,9 +12,19 @@
 */
 
 
-Route::get('/', function(){
-    return view('welcome');
-});
+Route::get('/', 'PagesController@home');     
+// Route::get('/', function(App\Example $example){
+//     // $container = new \App\Container();
+
+//     // $container->bind('example', function(){
+//     //     return new \App\Example();
+//     // });
+
+//     // $example = $container->resolve('example');
+//     // $example->go();
+//     // $example = resolve(App\Example::class);
+//     ddd($example);
+// });
 
 Route::get('/about', function(){
     return view('about', [
